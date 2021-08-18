@@ -1,0 +1,121 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_weight="1"
+    android:background="@drawable/gradient"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="16dp"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:onClick="message"
+        android:src="@drawable/btn2"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.614"
+        tools:layout_conversion_absoluteHeight="1449dp"
+        tools:layout_conversion_absoluteWidth="856dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:background="@color/bg"
+        android:text="@string/helpline_number_7070762756"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:backgroundTint="#316178"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.898"
+        tools:layout_conversion_absoluteHeight="300dp"
+        tools:layout_conversion_absoluteWidth="1452dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:background="@color/bg"
+        android:text="@string/tips_to_n_escape_from_threat2"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        app:backgroundTint="#316178"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_conversion_absoluteHeight="371dp"
+        tools:layout_conversion_absoluteWidth="720dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="210dp"
+        android:layout_height="90dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/laws_related_n_to_women2"
+        android:textColor="#fff"
+        android:textSize="14sp"
+        app:backgroundTint="#316178"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_conversion_absoluteHeight="371dp"
+        tools:layout_conversion_absoluteWidth="720dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="202dp"
+        android:layout_height="95dp"
+        android:background="@color/bg"
+        android:text="@string/add_contact"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:backgroundTint="#316178"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_conversion_absoluteHeight="300dp"
+        tools:layout_conversion_absoluteWidth="720dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="0dp"
+        android:layout_height="95dp"
+        android:background="@color/bg"
+        android:text="@string/safety_tips"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        app:backgroundTint="#316178"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_conversion_absoluteHeight="300dp"
+        tools:layout_conversion_absoluteWidth="720dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="@drawable/gradient">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/please_add_your_emergency_contact_numbers"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+
+            <EditText
+                android:id="@+id/Number1"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="@string/phone_number_1"
+                android:inputType="phone"
+                android:paddingLeft="16dp"
+                android:textColor="#fff" />
+            <!-- This is a comment -->
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:id="@+id/Number2"
+                android:textColor="#fff"
+
+                android:layout_height="50dp"
+                android:paddingLeft="16dp"
+                android:inputType="phone"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentLeft="true"
+                android:hint="@string/phone_number_2"
+                android:background="@drawable/rounded_edittext"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/rounded_button"
+                android:onClick="Onclick"
+                android:text="Done"
+                android:textColor="#fff"
+                app:backgroundTint="#64AABC" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal">
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

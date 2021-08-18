@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.womeniya" >
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
+        android:icon="@drawable/protection2"
+        android:label="SheSafe"
+        android:roundIcon="@drawable/protection2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Womeniya" >
+        <service
+            android:name=".MyService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+
+        <activity android:name=".Add_Numbers" />
+        <activity android:name=".Laws" />
+        <activity android:name=".SafetyThreat" />
+        <activity android:name=".Tips" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".SafeWomen"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:permission="TODO"
+            tools:ignore="ExportedReceiver" >
+            <intent-filter>
+                <action android:name="com.a.alarm" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".ShakeService" />
+    </application>
+
+</manifest>
